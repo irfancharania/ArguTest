@@ -65,7 +65,7 @@ let main argv =
     let optionalOtherFile = args.TryGetResult(Other_File) 
     
     // return type: OtherFile option, however expects parameter to be passed in
-    let optionalOtherFile2 = args.GetResult(Other_File2) 
+    let optionalOtherFile2 = args.GetResult(Other_File2, None) 
     
     // return type: OtherFile option option
     let optionalOtherFile2' = args.TryGetResult(Other_File2) 
